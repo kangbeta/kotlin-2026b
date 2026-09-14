@@ -40,7 +40,26 @@ private fun week03Variables() {
     var week = 2
     week = 3
     println("Course : $courseName")
-    println("Wekk : $week")
+    println("Week : $week")
+
+    println("========= Kotlin Variables =========")
+
+    // val(immutable) vs var(mutable)
+    val name = "Android"
+    var version = 8
+
+    println("Hi $name $version")
+
+    val age: Int = 24
+    val height: Double = 177.7
+    val isStudent: Boolean = false
+
+    println("Age: $age, Height: $height, Student: $isStudent")
+
+    // var nickname: String = null
+    var nickname: String? = null
+    nickname = "mirae"
+    println("Nickname: $nickname ${nickname?.length}")
 }
 
 @Composable
