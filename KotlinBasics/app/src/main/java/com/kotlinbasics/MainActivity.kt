@@ -27,10 +27,53 @@ class MainActivity : ComponentActivity() {
                 }
             }
         }
-        week03Variables()
-        week03Functions()
+//        week03Variables()
+//        week03Functions()
+//        week04Classes()
+        week04Collections()
 
     }
+
+    private fun week04Collections() {
+        println("== Kotlin Collections ==")
+
+        val fruits = listOf("apple", "banana", "orange")
+        val mutableFruits = mutableListOf("kiwi", "watermelon")
+
+//        fruits.add("kiwi") // immutable
+        println("Fruits: $fruits")
+        mutableFruits.add("banana")
+        println("Mutable Fruits: $mutableFruits")
+
+    }
+}
+
+private fun week04Classes() {
+    println("== Kotlin Classes ==")
+
+    class Student {
+        var name: String = ""
+        var age: Int = 0
+
+        fun introduce() {
+            println("Hi, I'm $name and I'm $age years old")
+        }
+    }
+
+        val student1 = Student()
+        student1.name = "Mirae"
+        student1.age = 21
+        student1.introduce()
+
+        data class Person(val name: String, val age: Int)
+
+        val person1 = Person("Kim", 23)
+        val person2 = Person("Park", 21)
+
+        println("Person1 : $person1")
+        println("Person1 : ${person1.name}")
+        println("Person1 : ${person1.age}")
+        println("Person2 : $person2")
 }
 
 private fun week03Variables() {
@@ -84,7 +127,7 @@ private fun week03Functions(){
     printAll(true, "dy")
     printAll(name = "mirae", vip = true) // named arguments
 
-    printMany("A", "B", "C", "D")g
+    printMany("A", "B", "C", "D")
 }
 
 @Composable
