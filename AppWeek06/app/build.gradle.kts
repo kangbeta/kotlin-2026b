@@ -3,7 +3,7 @@ plugins {
 }
 
 android {
-    namespace = "com.myapplication"
+    namespace = "com.appweek06"
     compileSdk {
         version = release(37)
     }
