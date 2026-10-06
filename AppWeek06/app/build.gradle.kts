@@ -3,13 +3,13 @@ plugins {
 }
 
 android {
-    namespace = "com.myapplication"
+    namespace = "com.appweek06"
     compileSdk {
         version = release(37)
     }
 
     defaultConfig {
-        applicationId = "com.myapplication"
+        applicationId = "com.appweek06"
         minSdk = 24
         targetSdk = 37
         versionCode = 1
@@ -30,9 +30,6 @@ android {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
     }
-    buildFeatures {
-        viewBinding = true
-    }
 }
 
 dependencies {
@@ -40,8 +37,6 @@ dependencies {
     implementation(libs.androidx.appcompat)
     implementation(libs.androidx.constraintlayout)
     implementation(libs.androidx.core.ktx)
-    implementation(libs.androidx.navigation.fragment.ktx)
-    implementation(libs.androidx.navigation.ui.ktx)
     implementation(libs.material)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.espresso.core)

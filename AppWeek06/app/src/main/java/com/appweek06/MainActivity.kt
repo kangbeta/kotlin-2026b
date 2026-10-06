@@ -1,4 +1,4 @@
-package com.myapplication
+package com.appweek06
 
 import android.util.Log
 import android.os.Bundle
