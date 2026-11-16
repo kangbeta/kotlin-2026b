@@ -6,11 +6,11 @@ plugins {
 }
 
 android {
-    namespace = "com.appweek10"
+    namespace = "com.appweek11"
     compileSdk = 36
 
     defaultConfig {
-        applicationId = "com.appweek10"
+        applicationId = "com.appweek11"
         minSdk = 26
         targetSdk = 36
         versionCode = 1
@@ -41,8 +41,8 @@ android {
 }
 
 dependencies {
-    implementation(libs.androidx.core.ktx)
-    implementation(libs.androidx.appcompat)
+    implementation("androidx.core:core-ktx:1.15.0")
+    implementation("androidx.lifecycle:lifecycle-runtime-compose:2.8.7")
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
@@ -57,7 +57,7 @@ dependencies {
     kapt("androidx.room:room-compiler:$roomVersion")
 
     // Coroutine
-    implementation("org.jetbrains.kotlin:kotlinx-coroutines-android:1.7.3")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3")
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
